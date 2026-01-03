@@ -10,7 +10,7 @@ const Navbar = () => {
       <img src={assets.logo} alt="" className='w-36 h-auto'/>
       </Link>
       <div>
-
+          <Link ></Link>
       </div>
       <div className='flex items-center gap-8'>
         <SearchIcon className='max-md:hidden w-6 h-6 cursor-pointer'/>
