@@ -29,3 +29,8 @@ jspm_packages/
 package.json-lock.json
 yarn.lock
 .pnpm-lock.yaml
+package-lock.json
+package.json
+.env
+.env.local
+.env.*.local
