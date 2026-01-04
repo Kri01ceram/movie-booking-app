@@ -40,7 +40,7 @@ const Navbar = () => {
         cursor-pointer'>Login</button>) : (
           <UserButton >
             <UserButton.MenuItems>
-              <UserButton.Action label="My Bookings" labelIcon={<TicketPlus width={15}/>}/>I
+              <UserButton.Action label="My Bookings" labelIcon={<TicketPlus width={15}/>} onClick={()=> navigate('/Mybookings')}/>
             </UserButton.MenuItems>
           </UserButton>
         )
