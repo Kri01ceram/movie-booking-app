@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useState } from 'react'
-import { MenuIcon, SearchIcon, XIcon } from 'lucide-react'
+import { MenuIcon, SearchIcon, User, XIcon } from 'lucide-react'
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
+import { TicketPlus } from 'lucide-react'
 
 
 const Navbar = () => {
@@ -36,7 +37,11 @@ const Navbar = () => {
           !user ? (<button onClick={openSignIn} className='px-4 py-1 sm:px-7 sm:py-2 bg-primary
         hover:bg-primary-dull transition rounded-full font-medium
         cursor-pointer'>Login</button>) : (
-          <UserButton />
+          <UserButton >
+            <UserButton.MenuItems>
+              <UserButton.Action label="My Bookings" labelIcon={<TicketPlus width={15}/>}/>I
+            </UserButton.MenuItems>
+          </UserButton>
         )
         }
         
