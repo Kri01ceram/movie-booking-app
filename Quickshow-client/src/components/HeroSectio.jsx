@@ -1,8 +1,14 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import backgroundImage from '../assets/backgroundImage.png'
+import { CalendarIcon, ClockIcon } from 'lucide-react'
+
 const HeroSectio = () => {
   return (
-    <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 1g:px-36 bg-[url("/backgroundImage.png")] bg-cover bg-center h-screen'>
+    <div
+      className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-cover bg-center h-screen'
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <img src={assets.marvelLogo} alt="" className="max-h-11 lg:h-11 mt-20" />
       <h1 className="text-5x1 md:text-[70px] md: leading-18 font-semibold max-w-110">
         Guardians <br /> of the Galaxy

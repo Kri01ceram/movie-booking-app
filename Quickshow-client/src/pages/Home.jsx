@@ -1,10 +1,11 @@
 import React from 'react'
+import HeroSectio from '../components/HeroSectio'
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <HeroSectio />
+    </>
   )
 }
 
