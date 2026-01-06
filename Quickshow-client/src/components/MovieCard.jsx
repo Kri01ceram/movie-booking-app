@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { StarIcon } from 'lucide-react'
+import timeFormat from '../lib/timeFormat';
 
 const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ hover:-translate-y-1 transition duration-300 w-66"
           .slice(0, 2)
           .map((genre) => genre.name)
           .join(" | ")}{" "}
-        * {movie.runtime}
+        * {timeFormat(movie.runtime)}
       </p>
       <div className='flex items-center justify-between mt-4 pb-3'>
         <button onClick={() => {
