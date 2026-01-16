@@ -19,7 +19,7 @@ const MovieDetails = () => {
     <div>
       
     </div>
-  ) : <div>Loading...</div>
+  ) : <div>Loading..</div>
 }
 
 export default MovieDetails
