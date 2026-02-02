@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { StarIcon } from 'lucide-react'
+import { Star } from 'lucide-react'
 import timeFormat from '../lib/timeFormat';
 
 const MovieCard = ({ movie }) => {
@@ -36,7 +36,7 @@ hover:-translate-y-1 transition duration-300 w-66"
           Buy Tickets
         </button>
         <p className="flex items-center gap-1 text-sm text-gray-400 mt-1 pr-1">
-          <StarIcon className="w-4 h-4 text-primary fill-primary" />
+          <Star className="w-4 h-4 text-primary fill-primary" />
 
           {movie.vote_average.toFixed(1)}
         </p>

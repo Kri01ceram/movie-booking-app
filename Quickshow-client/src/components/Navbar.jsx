@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useState } from 'react'
-import { MenuIcon, SearchIcon, User, XIcon } from 'lucide-react'
+import { Menu, Search, X } from 'lucide-react'
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
 import { TicketPlus } from 'lucide-react'
 
@@ -25,7 +25,7 @@ const Navbar = () => {
           ${isOpen ? 'max-md:w-full bg-black/70' : 'max-md:w-0 max-md:bg-transparent'}
         `}
       >
-        <XIcon className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer' onClick={() => setIsOpen(false)} />
+        <X className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer' onClick={() => setIsOpen(false)} />
           <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Home</Link>
           <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/movies'>Movies</Link>
           <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/theatres'>Theatres</Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/favorite'>Favorites</Link>
       </div>
       <div className='flex items-center gap-8'>
-        <SearchIcon className='max-md:hidden w-6 h-6 cursor-pointer'/>
+        <Search className='max-md:hidden w-6 h-6 cursor-pointer'/>
         {
           !user ? (<button onClick={openSignIn} className='px-4 py-1 sm:px-7 sm:py-2 bg-primary
         hover:bg-primary-dull transition rounded-full font-medium
@@ -47,7 +47,7 @@ const Navbar = () => {
         }
         
      </div>
-      <MenuIcon className='max-md:ml-4 md:hidden w-8 h-8 cursor-pointer' onClick={() => setIsOpen(true)} />
+      <Menu className='max-md:ml-4 md:hidden w-8 h-8 cursor-pointer' onClick={() => setIsOpen(true)} />
       
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import backgroundImage from '../assets/backgroundImage.png'
-import { CalendarIcon, ClockIcon } from 'lucide-react'
+import { Calendar, Clock } from 'lucide-react'
 import { ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
@@ -20,10 +20,10 @@ const HeroSectio = () => {
       <div className="flex items-center gap-4 text-gray-300">
         <span>Action | Adventure | Sci-Fi</span>
         <div className="flex items-center gap-1">
-          <CalendarIcon className="w-4.5 h-4.5" /> 2018
+          <Calendar className="w-4.5 h-4.5" /> 2018
         </div>
         <div className="flex items-center gap-1">
-          <ClockIcon className="w-4.5 h-4.5" /> 2h 8m
+          <Clock className="w-4.5 h-4.5" /> 2h 8m
         </div>
       </div>
       <p className="max-w-md text-gray-300">

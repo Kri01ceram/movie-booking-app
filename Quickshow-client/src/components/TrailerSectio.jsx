@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import { dummyTrailers } from '../assets/assets';
 import ReactPlayer from 'react-player';
 import BlurCircle from './BlurCircle';
-import { PlayCircleIcon } from 'lucide-react';
+import { PlayCircle } from 'lucide-react';
 
 
 const TrailerSectio = () => {
@@ -35,7 +35,7 @@ const TrailerSectio = () => {
               className="rounded-lg w-full h-full object-cover brightness-75"
             />
 
-            <PlayCircleIcon
+            <PlayCircle
               strokeWidth={1.6}
               className="absolute top-1/2 left-1/2 w-5 md:w-8 h-5 md:h-12 transform -translate-x-1/2
 -translate-y-1/2"
