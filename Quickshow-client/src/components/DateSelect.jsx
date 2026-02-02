@@ -32,6 +32,7 @@ const DateSelect = ({dateTime, id}) => {
             >
               {Object.keys(dateTime).map((date) => (
                 <button
+                  onClick={()=> setSelected(date)}
                   key={date}
                   className={`flex flex-col items-center
 justify-center h-14 w-14 aspect-square rounded
